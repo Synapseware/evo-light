@@ -1,0 +1,12 @@
+programming device...
+	avrdude -c usbtiny -p m88 -B 1 -U flash:w:.\Release\bikelight.hex
+
+reading fuses...
+	avrdude -c usbtiny -p m88 -B 1 -U hfuse:r:.\high.txt:h -U lfuse:r:.\low.txt:h
+
+writing fuses...
+	avrdude -c usbtiny -p m88 -B 8 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
+	avrdude -c usbtiny -p m88 -B 8 -U efuse:w:0xff:m
+
+
+	???

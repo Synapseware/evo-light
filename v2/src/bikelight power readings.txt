@@ -1,0 +1,14 @@
+6.2mA, off
+0.8mA when the MCU is disconnected (need sleep mode!)
+190mA low
+750mA high
+80mA crazy blink
+200mA on fade in/out
+90mA on fade out
+* 980mA on full-open from mosfet
+* 1050mA on short circuit, 2000mAh 3.7v Lipo
+	
+
+* Watch for high-temperatures from the LED board!
+
+All this will change when the regulator board is built, and sleep mode is available in the firmware for the MCU
